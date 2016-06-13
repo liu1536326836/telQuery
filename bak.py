@@ -9,7 +9,7 @@ import os
 HOST = "localhost"
 USER = "root"
 PASSWD = "rocky"
-DBNAME = "go_test"
+DBNAME = "tel_info"
 
 selectSql = "select * from %s order by mts"
 insertSql = "insert into %s values ('%s', '%s', '%s')"

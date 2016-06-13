@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strconv"
-	//	"time"
+	"time"
 )
 
 const URL = "http://localhost:8080/tel?tel="
@@ -47,7 +47,7 @@ func get(ch chan<- bool, i int) {
 			continue
 		}
 
-		//		time.Sleep(200 * time.Millisecond)
+		time.Sleep(200 * time.Millisecond)
 		resp.Body.Close()
 
 		j = j + 10000

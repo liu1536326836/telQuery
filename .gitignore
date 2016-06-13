@@ -1,0 +1,10 @@
+.idea/misc.xml
+.idea/modules.xml
+.idea/telQuery.iml
+.idea/workspace.xml
+bin/
+cmd
+log.log*
+pkg/
+.idea/vcs.xml
+*~

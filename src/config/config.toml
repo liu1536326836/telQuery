@@ -1,6 +1,6 @@
 [web]
 Listen = ":8080"
-Fasthttp = true
+Fasthttp = false
 
 [lib]
 CallAPI = true
@@ -10,11 +10,11 @@ Driver = "mysql"
 User = "root"
 Passwd = "rocky"
 Host = "127.0.0.1:3306"
-DBName = "go_test"
+DBName = "tel_info"
 
 [log]
 Mode = "file"
-Level = "error"
+Level = "trace"
 Buffer = 100000
 
 FileName = "log.log"

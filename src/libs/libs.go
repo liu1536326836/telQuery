@@ -38,6 +38,9 @@ func GetHTMLContent(url string) (string, error) {
 	}
 
 	id := strings.Index(str, "{")
+	if id == -1 {
+		return "", fmt.Errorf("Index '{' failed")
+	}
 
 	return FormatData(str[id : len(str)-2]), nil
 }
