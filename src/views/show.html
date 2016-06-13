@@ -1,0 +1,55 @@
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>电话归属地查询</title>
+	<style type="text/css">
+		div {
+			text-align: center;
+		}
+
+		table {
+			margin: 10px auto;
+			width: 40%;
+		}
+
+		td {
+			color: white;
+			background-color: blue;
+			font-weight: bold;
+			width: 40%;
+			text-align:center;
+		}
+
+		th {
+			background-color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<form mothed="GET" action="/tel">
+		<div>
+			<input type="text"  name="tel" />
+			<input type="submit" value="查询"/>
+		</div>
+	</form>	
+
+	<table border="1" cellspacing=0>
+		<tr>
+			<th colspan="2">查询结果</th>
+		<tr>
+		<tr>
+			<td>手机号码</td>
+			<td>{{info.TelString}}</td>
+		</tr>
+		<tr>
+			<td>号码归属地</td>
+			<td>{{info.Province}}</td>
+		</tr>
+		<tr>
+			<td>卡类型</td>
+			<td>{{info.CatName}}</td>
+		</tr>
+	</table>
+</body>
+</html>

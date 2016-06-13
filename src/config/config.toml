@@ -1,0 +1,30 @@
+[web]
+Listen = ":8080"
+Fasthttp = true
+
+[lib]
+CallAPI = true
+
+[db]
+Driver = "mysql"
+User = "root"
+Passwd = "rocky"
+Host = "127.0.0.1:3306"
+DBName = "go_test"
+
+[log]
+Mode = "file"
+Level = "error"
+Buffer = 100000
+
+FileName = "log.log"
+LogRotate = true
+MaxLines = 10000
+MaxSizeShift = 28
+DailyRotate = true
+MaxDays = 7
+
+
+[pongo]
+Directory = "src/views"
+Reload = true
