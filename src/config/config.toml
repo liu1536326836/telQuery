@@ -10,7 +10,7 @@ Driver = "mysql"
 User = "root"
 Passwd = "rocky"
 Host = "127.0.0.1:3306"
-DBName = "tel_info"
+DBName = "go_test"
 
 [log]
 Mode = "file"
